@@ -1,0 +1,113 @@
+.nav-options ul li {
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.nav-options ul li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.go-home a {
+    /* background-color: red; */
+    border-radius: 30px;
+}
+
+.go-home a:hover {
+    background-color: rgba(255, 255, 255, 0.2);;
+}
+
+/* .nav-options ul .account {
+    background-color: black;
+} */
+.form-control {
+    background-color: black !important;
+    color: white !important;
+    border: 1px solid #555;
+}
+
+.form-control::placeholder {
+    color: #bbb !important;
+}
+
+.form-select {
+    background-color: black !important;
+    color: white !important;
+    border: 1px solid #555;
+}
+
+.form-check-input {
+    background-color: black !important;
+    border: 1px solid white !important;
+}
+
+.form-check-label {
+    color: white !important;
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    border: none;
+    font-weight: bold;
+}
+
+.form-control[type="date"] {
+    background-color: black !important;
+    color: white !important;
+    border: 1px solid #555;
+    padding-right: 40px;
+    /* Make space for the icon */
+    position: relative;
+}
+
+/* Hide the default calendar icon */
+.form-control[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+    position: absolute;
+    right: 10px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+/* Container for the input and the custom icon */
+.date-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+/* Custom SVG calendar icon */
+.date-container::after {
+    content: "";
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 24 24'%3E%3Cpath d='M19 4h-1V2h-2v2H8V2H6v2H5C3.9 4 3 4.9 3 6v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm-4-7h-4v4h4v-4z'/%3E%3C/svg%3E") no-repeat center;
+    background-size: 20px 20px;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.custom-switch {
+    width: 50px;
+    height: 25px;
+    background-color: #343a40;
+    /* Dark background */
+    border: 2px solid #6c757d;
+    /* Soft border */
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.custom-switch:checked {
+    background-color: #f8c102;
+    /* Golden glow for light mode */
+    border-color: #ffc107;
+}
+
+.active {
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Light highlight */
+    border-radius: 5px;
+}

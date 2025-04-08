@@ -1,0 +1,51 @@
+.heading h1 {
+    font-family: "Jost", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.with-google p {
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.eye {
+    width: 30px;  /* Fixed size for better alignment */
+    height: 38px;
+    position: absolute; /* Ensures correct positioning */
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+html, body {
+    height: auto; /* Ensures full document scroll */
+    overflow-y: auto !important; /* Allows vertical scrolling */
+}
+
+
+.hero {
+    min-height: 100vh; /* Allows it to grow if needed */
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+
+
+.card {
+    padding: 2rem;
+    margin: 0;
+    width: 100%;
+    max-width: 400px; /* Ensures it doesn't stretch too much */
+}
+
+/* Optional: Smooth button hover effect */
+.btn:hover {
+    filter: brightness(1.1);
+    transition: all 0.2s ease-in-out;
+}

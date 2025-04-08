@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.row {
+    margin: 0;
+    padding: 0;
+}
+
+.mobile-nav .heading {
+    font-family: "Jost", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.nav-bar {
+    border-right: 0.5px solid wheat;
+}
+
+
+.nav-bar .heading {
+    font-family: "Jost", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* .notification {
+    border-left: 0.5px solid wheat;
+} */
+
+.home-link {
+    background-color: #212529;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.home-link img {
+    width: 18%;
+}
+
+.notification-link {
+    border-radius: 20px;
+    padding: 5px;
+    transition: all 0.5s;
+}
+
+.notification-link img {
+    width: 18%;
+}
+
+.search-link {
+    border-radius: 20px;
+    padding: 5px;
+    transition: all 0.5s;
+}
+
+.search-link img {
+    width: 18%;
+}
+
+.settings-link {
+    border-radius: 20px;
+    padding: 5px;
+    transition: all 0.5s;
+}
+
+.settings-link img {
+    width: 18%;
+}
+
+.messages-link {
+    border-radius: 20px;
+    padding: 5px;
+    transition: all 0.5s;
+}
+
+.messages-link img {
+    width: 18%;
+}
+
+/* .nav-links ul {
+    margin-top: 50%;
+} */
+
+.nav-links ul li {
+    cursor: pointer;
+}
+
+.nav-links ul li:hover {
+    background-color: #212529;
+}
+
+
+.profile-image img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.profile {
+    cursor: pointer;
+}
+
+/* Notification sidebar */
+.msg {
+    border-bottom: 1px solid wheat;
+}
+
+.noti-msg img {
+    width: 40px;
+    height: 40px;
+}
+
+/* .mobile-nav {
+    height: 20%;
+} */
+
+
+.create-post .card {
+    background-color: #1b1e23;
+    width: 40rem;
+}
+
+.card .profile-picture img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.card textarea {
+    background-color: #1b1e23 !important; 
+    color: white;
+    border: none; 
+    resize: none;
+    width: 100%; 
+    height: 100px; 
+    padding: 10px; 
+}
+
+.card textarea:focus {
+    background-color: #1b1e23 !important; 
+    outline: none; 
+    color: white;
+}
+
+.card textarea::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 20px
+}
+
+.img-show {
+    height: 300px;
+    width: 100%;
+}
+
+.upload-files img {
+    width: 50px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .create-post {
+        height: 75% !important;
+        width: 100% !important;
+    }
+
+    .card {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .cancel img {
+        width: 50% !important;
+    }
+}

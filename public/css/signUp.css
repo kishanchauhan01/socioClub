@@ -1,0 +1,33 @@
+::-webkit-scrollbar {
+    width: 0;
+    /* Remove scrollbar space */
+    background: transparent;
+    /* Optional: just make scrollbar invisible */
+}
+
+.signUp-form {
+    max-height: 100%; /* Prevent the form from overflowing */
+}
+
+.heading {
+    margin-top: -25px;
+}
+
+.heading h1 {
+    font-family: "Jost", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+
+}
+
+
+.sign-up {
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn:hover {
+    background-color: black;
+    color: #0d6efd;
+}

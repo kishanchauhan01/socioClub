@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.row {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar {
+    border-right: 0.5px solid wheat;
+}
+
+.mobile-nav .heading {
+    font-family: "Jost", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.nav-bar .heading {
+    font-family: "Jost", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* .notification {
+    border-left: 0.5px solid wheat;
+} */
+
+.home-link {
+    border-radius: 20px;
+    padding: 5px;
+    transition: all 0.5s;
+}
+
+.home-link img {
+    width: 18%;
+}
+
+.notification-link  {
+    border-radius: 20px;
+    padding: 5px;
+    transition: all 0.5s;
+}
+
+.notification-link img {
+    width: 18%;
+}
+
+.search-link {
+    border-radius: 20px;
+    padding: 5px;
+    transition: all 0.5s;
+}
+
+.search-link img {
+    width: 18%;
+}
+
+.settings-link {
+    border-radius: 20px;
+    padding: 5px;
+    transition: all 0.5s;
+}
+
+.settings-link img {
+    width: 18%;
+}
+
+.messages-link {
+    border-radius: 20px;
+    padding: 5px;
+    transition: all 0.5s;
+}
+
+.messages-link img {
+    width: 18%;
+}
+
+/* .nav-links ul {
+    margin-top: 50%;
+} */
+
+.nav-links ul li {
+    cursor: pointer;
+}
+
+.nav-links ul li:hover {
+    background-color: #212529;
+}
+
+
+.profile-image img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.profile {
+    background-color: #212529 !important;
+    border-radius: 40px !important;
+    cursor: pointer;
+}
+
+.msg {
+    border-bottom: 1px solid wheat;
+}
+
+.noti-msg img {
+    width: 40px;
+    height: 40px;
+}
+
+.banner {
+    border-bottom: 1px solid wheat;
+}
+
+.user-info {
+    border-bottom: 1px solid wheat;
+}
+
+.usernames {
+    margin-left: 50px !important;
+}
+
+.post-img {
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .banner {
+        height: 16% !important;
+    }
+
+    .col-md-10 {
+        margin-top: 40px;
+    }
+}
