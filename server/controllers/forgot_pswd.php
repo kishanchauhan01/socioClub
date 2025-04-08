@@ -6,6 +6,12 @@ require '../vendor/autoload.php'; // Ensure PHPMailer is installed via Composer
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/../');
+$dotenv->load();
+
+$smtp_username = $_ENV['SMTP_USERNAME'];
+$smtp_password = $_ENV['SMTP_PASSWORD'];
+
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $email = $_POST['loginEmail'];
 
@@ -29,8 +35,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $mail->isSMTP();
             $mail->Host = 'smtp.gmail.com';
             $mail->SMTPAuth = true;
-            $mail->Username = 'kchauhan242@rku.ac.in';// Replace with your Gmail
-            $mail->Password = 'jjtk yvtx bocm bfkv';// Use App Password, not Gmail password
+            $mail->Username = $smtp_username;// Replace with your Gmail
+            $mail->Password = $smtp_password;// Use App Password, not Gmail password
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port = 587;
 

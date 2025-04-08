@@ -22,15 +22,11 @@
 
 ---
 
-# Todo
+# functionalites
 
-### For cie 1:-
-
-* only 6 pages:-
-
-1) Home
-2) Login
-3) SingUp
-4) UserProfile
-5) Search
-6) Settings
+1) Post
+2) Like and comment
+3) Chat
+4) Change Theme
+5) search
+6) followers

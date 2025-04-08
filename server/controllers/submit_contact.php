@@ -6,6 +6,12 @@ require '../vendor/autoload.php'; // PHPMailer autoload
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/../');
+$dotenv->load();
+
+$smtp_username = $_ENV['SMTP_USERNAME'];
+$smtp_password = $_ENV['SMTP_PASSWORD'];
+
 // Get user_id from session or cookie
 $user_id = $_SESSION['user_id'] ?? $_COOKIE['user_id'] ?? null;
 
@@ -28,8 +34,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && $user_id) {
             $mail->isSMTP();
             $mail->Host = 'smtp.gmail.com';
             $mail->SMTPAuth = true;
-            $mail->Username = 'kchauhan242@rku.ac.in';// Your Gmail
-            $mail->Password = 'jjtk yvtx bocm bfkv';// App Password (NOT your normal Gmail password)
+            $mail->Username = $smtp_username;// Your Gmail
+            $mail->Password = $smtp_password;// App Password (NOT your normal Gmail password)
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port = 587;
 
